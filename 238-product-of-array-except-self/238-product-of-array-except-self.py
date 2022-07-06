@@ -10,15 +10,12 @@ class Solution:
             num_2[i] = num_2[i]*num_2[i+1]
             
         for i in range(len(nums)):
-            if nums[i] != 0:
-                x = (num_1[i]//nums[i]) * (num_2[i]//nums[i])
+            if i == 0:
+                x = num_2[i+1]
+            elif i == len(nums)-1:
+                x =num_1[i-1]
             else:
-                if i == 0:
-                    x = num_2[i+1]
-                elif i == len(nums)-1:
-                    x =num_1[i-1]
-                else:
-                    x = num_1[i-1]*num_2[i+1]
+                x = num_1[i-1]*num_2[i+1]
             solution.append(x)
         return solution
             
