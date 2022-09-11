@@ -27,6 +27,8 @@ class Solution:
     
     def wordPattern(self, pattern: str, s: str) -> bool:
         
+    
+        
         my_pattern_dict = self.pattern_dict(pattern)
         my_s_dict = self.pattern_dict(s.split())
         
