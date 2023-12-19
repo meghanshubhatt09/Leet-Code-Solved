@@ -14,9 +14,8 @@ class Solution:
             end = len(nums) - 1
             
             while(start < end):
-                sumx = nums[i] + nums[start] + nums[end]
                 
-                if sumx == target:
+                if (sumx := nums[i] + nums[start] + nums[end]) == target:
                     return sumx
                 
                 

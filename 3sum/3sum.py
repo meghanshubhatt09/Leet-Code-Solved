@@ -17,9 +17,8 @@ class Solution:
             
             while(a<b):
                 
-                ans = nums[i] + nums[a] + nums[b]
                 
-                if ans == 0:
+                if (ans := nums[i] + nums[a] + nums[b]) == 0:
                     result.append([nums[i] , nums[a] , nums[b]])
                     a+=1
                     while(a<b and nums[a] == nums[a-1]):
